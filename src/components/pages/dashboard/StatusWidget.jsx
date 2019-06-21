@@ -17,7 +17,8 @@ export default class StatusWidget extends React.Component {
 
     return (
       <div className={`status status-${status}`}>
-        <h2>{status}</h2>
+        <h2>Financial Status</h2>
+        <h1>{status}</h1>
       </div>
     );
   }
