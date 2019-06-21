@@ -1,5 +1,5 @@
 export const getData = function() {
-  fetch("./userData.json", {
+  return fetch("./userData.json", {
     headers: {
       "Content-Type": "application/json",
       Accept: "application/json"

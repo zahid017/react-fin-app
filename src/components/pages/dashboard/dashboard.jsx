@@ -2,6 +2,7 @@ import React from "react";
 import TransactionWidget from "./TransactionWidget";
 import InvoiceWidget from "./InvoiceWidget";
 import StatusWidget from "./StatusWidget";
+import { getData } from "../../../services/GetDataService";
 import "./dashboard.css";
 
 class Dashboard extends React.Component {
@@ -15,17 +16,7 @@ class Dashboard extends React.Component {
   }
 
   getData() {
-    return fetch("/userData.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json"
-      }
-    })
-      .then(res => res.json())
-      .then(resData => {
-        console.log(resData);
-        this.setState({ data: resData });
-      });
+    getData().then(data => this.setState({ data }));
   }
 
   componentDidMount() {
