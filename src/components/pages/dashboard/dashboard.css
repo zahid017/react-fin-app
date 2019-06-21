@@ -1,19 +1,21 @@
 .container {
-    display: flex;
-    flex-flow: row nowrap;
+    width: 100%;
+    max-width:100%;
+    display: table;
 }
 
 .container > .row {
-    display: flex;
-    flex-flow: row nowrap;
+    width: 100%;
+    display: table-row;  
 }
 .container > .row > .col-3 {
-    display: flex;
-    align-items: flex-start;
-    flex: 1 auto;
+    width: 33%;
+    display: table-cell;
+    vertical-align: top;
 }
 
 .container > .row > .col-3 > .content {
+    display: block;
     margin: 15px;
     border: 1px solid #ccc;
     border-radius: 3px;
