@@ -8,7 +8,17 @@ export default class RouteComponents extends React.Component {
   render() {
     return (
       <Switch>
-        <Route path="/" Redirect={routes.dashboard} exact />
+        <Route
+          path="/"
+          render={() => (
+            <Redirect
+              to={{
+                pathname: routes.dashboard
+              }}
+            />
+          )}
+          exact
+        />
         <PrivateRoute component={DashBoard} path={routes.dashboard} />
         <Route path={routes.unauthorized} component={UnAuthorizePage} />
       </Switch>
