@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.container > .row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.container > .row > .col-3 {
+    display: flex;
+    align-items: flex-start;
+    flex: 1 auto;
+}
+
+.container > .row > .col-3 > .content {
+    margin: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #f8f8ff;
+    padding: 5px
+}

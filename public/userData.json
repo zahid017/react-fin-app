@@ -1,0 +1,64 @@
+[
+  {
+    "name": "Mohammad Zahed",
+    "transactions": [
+      {
+        "uniqueId": "inv-1",
+        "description": "Invoice 1",
+        "transactionDate": "10-01-2019",
+        "transactionType": "C",
+        "amount": 10.0
+      },
+      {
+        "uniqueId": "inv-2",
+        "description": "Invoice 1",
+        "transactionDate": "10-01-2019",
+        "transactionType": "C",
+        "amount": 10.0
+      },
+      {
+        "uniqueId": "inv-3",
+        "description": "Invoice 1",
+        "transactionDate": "10-01-2019",
+        "transactionType": "C",
+        "amount": 10.0
+      }
+    ],
+    "invoices": [
+      {
+        "uniqueId": "inv-1",
+        "clientName": "client 1",
+        "createdAt": "01-01-2019",
+        "modifiedAt": "01-01-2019",
+        "amount": 10.0,
+        "status": "PAID"
+      },
+      {
+        "uniqueId": "inv-2",
+        "clientName": "client 1",
+        "createdAt": "01-01-2019",
+        "modifiedAt": "01-01-2019",
+        "amount": 10.0,
+        "status": "PAID"
+      },
+      {
+        "uniqueId": "inv-3",
+        "clientName": "client 1",
+        "createdAt": "01-01-2019",
+        "modifiedAt": "01-01-2019",
+        "amount": 10.0,
+        "status": "PAID"
+      },
+      {
+        "uniqueId": "inv-1",
+        "clientName": "client 1",
+        "createdAt": "15-01-2019",
+        "modifiedAt": "15-01-2019",
+        "amount": 10.0,
+        "status": "NOT PAID"
+      }
+    ],
+    "totalAmount": 30.0,
+    "threshold": 20.00
+  }
+]

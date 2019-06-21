@@ -1,0 +1,12 @@
+.status {
+    padding: 1px;
+}
+.status-Good {
+    background-color: green;
+}
+.status-Moderate {
+    background-color: yellow;
+}
+.status-Poor {
+    background-color: red;
+}
