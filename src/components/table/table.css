@@ -24,7 +24,6 @@ table > thead > tr > th {
     white-space: nowrap;
     line-height: 18px;
     vertical-align: bottom;
-    padding: 10;
     text-align: inherit
 }
 

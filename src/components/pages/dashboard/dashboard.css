@@ -1,20 +1,20 @@
-.container {
+.app-container {
     width: 100%;
     max-width:100%;
     display: table;
 }
 
-.container > .row {
+.app-container > .app-row {
     width: 100%;
     display: table-row;  
 }
-.container > .row > .col-3 {
+.app-container > .app-row > .app-col-3 {
     width: 33%;
     display: table-cell;
     vertical-align: top;
 }
 
-.container > .row > .col-3 > .content {
+.app-container > .app-row > .app-col-3 > .app-content {
     display: block;
     position: relative;
     min-height: 200px;

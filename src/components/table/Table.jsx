@@ -1,5 +1,6 @@
 import React from "react";
 import "./table.css";
+import { keyGenerator } from "@/utils/keyGenerator";
 
 class Table extends React.Component {
   render() {
@@ -11,7 +12,7 @@ class Table extends React.Component {
             <tr>
               {this.props.columns &&
                 this.props.columns.map(item => (
-                  <th key={item.name}>{item.name}</th>
+                  <th key={keyGenerator()}>{item.name}</th>
                 ))}
             </tr>
           </thead>
@@ -19,7 +20,7 @@ class Table extends React.Component {
             {this.props.data &&
               this.props.data.map(item => (
                 <Row
-                  key={item.uniqueId}
+                  key={keyGenerator()}
                   items={item}
                   columns={this.props.columns}
                 />
@@ -32,13 +33,15 @@ class Table extends React.Component {
 }
 
 const Row = props => {
-  console.log(props);
   return (
     <React.Fragment>
       <tr>
-        {props.columns.map(item => (
-          <td key={item.key}>{props.items[item.key]}</td>
-        ))}
+        {props.columns.map(item => {
+          if (item.key === "action") {
+            return <td key={keyGenerator()}>{item.render(props.items)}</td>;
+          }
+          return <td key={keyGenerator()}>{props.items[item.key]}</td>;
+        })}
       </tr>
     </React.Fragment>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import Table from "../../table/Table";
+import { UserConsumer } from "@/contexts/UserProvider";
 const columns = [
   {
     key: "uniqueId",
@@ -26,11 +27,15 @@ const columns = [
 class TransactionWidget extends React.Component {
   render() {
     return (
-      <Table
-        data={this.props.data && this.props.data.transactions}
-        columns={columns}
-        title="Transactions"
-      ></Table>
+      <UserConsumer>
+        {({ data }) => (
+          <Table
+            data={data && data.transactions}
+            columns={columns}
+            title="Transactions"
+          ></Table>
+        )}
+      </UserConsumer>
     );
   }
 }

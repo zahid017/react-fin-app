@@ -35,7 +35,7 @@
       },
       {
         "uniqueId": "inv-2",
-        "clientName": "client 1",
+        "clientName": "client 2",
         "createdAt": "01-01-2019",
         "modifiedAt": "01-01-2019",
         "amount": 10.0,
@@ -43,15 +43,15 @@
       },
       {
         "uniqueId": "inv-3",
-        "clientName": "client 1",
+        "clientName": "client 3",
         "createdAt": "01-01-2019",
         "modifiedAt": "01-01-2019",
         "amount": 10.0,
         "status": "PAID"
       },
       {
-        "uniqueId": "inv-1",
-        "clientName": "client 1",
+        "uniqueId": "inv-4",
+        "clientName": "client 4",
         "createdAt": "15-01-2019",
         "modifiedAt": "15-01-2019",
         "amount": 10.0,
@@ -59,6 +59,6 @@
       }
     ],
     "totalAmount": 30.0,
-    "threshold": 20.00
+    "threshold": 20.0
   }
 ]
