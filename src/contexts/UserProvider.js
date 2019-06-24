@@ -45,7 +45,7 @@ class UserProvider extends React.Component {
   }
 
   updateStatus(totalAmount, threshold) {
-    if (totalAmount < threshold && totalAmount > 0) {
+    if (totalAmount < threshold && totalAmount >= 0) {
       return "Moderate";
     }
     if (totalAmount < 0) {
